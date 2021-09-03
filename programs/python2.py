@@ -231,6 +231,16 @@ def seven(a, b, c):
 
 
 def eight(string, num):
+
+    # Finding string length
+    length = len(str)
+ 
+    # Finding middle index of string
+    middle = length // 2
+ 
+    # replace the middle character of the string
+    #str[middle]
+    # either side of middle will be num -1 
     return
 
     # <QUESTION 9>
@@ -250,7 +260,25 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
-    return
+    l1 = len(string1)
+    l2 = len(string2)
+    if l1>l2:
+        nstring1 = string2
+        nstring2 = string1
+        string1 = nstring1
+        string2 = nstring2
+    
+    
+    string1 = sorted(string1)
+    string2 = sorted(string2)
+    l3 = len(string1)
+    # Compare sorted strings
+    for i in range(0, l3):
+        if string1[i] != string2[i]:
+            return False
+ 
+    return True
+    
 
     # <QUESTION 10>
 
