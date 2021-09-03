@@ -90,7 +90,13 @@ def two(num):
 
 
 def three(a):
-    return
+
+    n1 = int( "%s" % a )
+    n2 = int( "%s%s" % (a,a) )
+    n3 = int( "%s%s%s" % (a,a,a) )
+    n4 = int( "%s%s%s%s" % (a,a,a,a) )
+    total = (n1+n2+n3+n4)
+    return total
 
     # <QUESTION 4>
 
@@ -120,7 +126,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+
+    zipped = ''.join(map(''.join, zip(string1, string2)))
+
+    return zipped
 
     # <QUESTION 5>
 
@@ -138,8 +147,10 @@ def four(string1, string2):
 
 
 def five():
-    return
+    
+    randl = random.sample([i for i in range(100,201) if i%2==0], 5)
 
+    return randl
     # <QUESTION 6>
 
     # Given a string, return the boolean True if it ends in "py", and False if not.
@@ -183,7 +194,25 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    list = []
+    list.append(a)
+    list.append(b)
+    list.append(c)
+    ## sort list from smallest to biggest call it sortedlist
+    list = sorted(list, reverse=False)
+    ##distance1 = sortedlist[1] - sortedlist[0]
+    distance1 = list[1] - list[0]
+    
+    ##distance2 = sortedlist[2] - sortedlist[1]
+    distance2 = list[2] - list[1]
+    ## if distances are equivilant return true
+    ## else return false
+
+    if distance1 == distance2:
+        return True
+    else:
+        return False
+    
 
     # <QUESTION 8>
 
