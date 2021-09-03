@@ -169,7 +169,19 @@ def five():
 
 
 def six(string):
-    return
+
+    string = string.lower()
+    slist = list(string)
+    ln = len(slist)
+    if slist[-ln] == "y":
+        slist.pop[-ln]
+        if slist[-ln] == "p":
+            return True
+        else:
+            return False
+
+    
+    
 
     # <QUESTION 7>
 
@@ -230,18 +242,23 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 
-def eight(string, num):
+def eight(string, num): 
 
+    # need to add to list 
+    slist = list(string)
     # Finding string length
-    length = len(str)
+    length = len(slist)
  
     # Finding middle index of string
     middle = length // 2
  
     # replace the middle character of the string
+    
+    #middlereplace = slist[:middle:] +  slist.remove[:middle:] +slist[middle:]
+    slist.pop[:middle:]
     #str[middle]
     # either side of middle will be num -1 
-    return
+    return slist
 
     # <QUESTION 9>
 
