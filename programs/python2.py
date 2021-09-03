@@ -32,7 +32,15 @@ import random
 
 
 def one(string):
-    return
+    str(string)
+    stringlen = len(string)
+    word = ""
+    new_word = ""
+    for i in stringlen: 
+        new_word = word + i
+    return new_word
+
+
 
     # <QUESTION 2>
 
@@ -51,7 +59,20 @@ def one(string):
 
 
 def two(num):
-    return
+
+    result = False
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                result = True
+                
+                break      
+      
+    if result:
+        return False
+    else:
+        return True
+    
 
     # <QUESTION 3>
 
