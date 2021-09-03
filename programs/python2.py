@@ -297,4 +297,10 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    return
+    array2d = [[0 for col in range(a)] for row in range(b)]
+    for row in range(b):
+        for col in range(a):
+            array2d[row][col]= row*col
+
+    return array2d
+    
